@@ -1,0 +1,781 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening    
+    - hey there
+    - let's go
+    - hey dude  
+    - good afternoon
+
+- intent: asking_help
+  examples: |
+    - Can you choose PC components for me?
+    - Can you choose PC components for gaming?
+    - Can you choose PC components for video editing?
+    - Can you choose PC components to build PC?
+    - Can you choose components to build PC for me?
+    - Can you choose components for gaming PC?
+    - Can you choose components for video editing?
+    - Can you choose components to build PC?
+    - recommend pc for me ?
+    - Can you help me build a PC?
+    - What PC components should I choose?
+    - Can you suggest PC components for a specific use case?
+    - How can I build a PC for gaming?
+    - What are the best components for a video editing PC?
+    - Can you assist me in choosing PC parts?
+    
+
+- intent: find_components
+  examples: |
+    - What components do I need for playing [GTA V](application_name)?
+    - What components are required for using [Adobe Premiere Pro](application_name)?
+    - Can you suggest components for running [Adobe Photoshop](application_name)?
+    - I want to build a PC for playing [Far Cry 1](application_name).
+    - What do I need to build a PC for using [GIMP](application_name)?
+    - Help me choose components to run [Blender](application_name) smoothly.
+    - What components are best for playing [Excel](application_name)?
+    - What hardware do I need for working with [AutoCAD](application_name)?
+    - Can you recommend PC parts for using [Unity 3D](application_name)?
+    - I want to assemble a PC for playing [Minecraft](application_name).
+    - What specs should I consider for using [DaVinci Resolve](application_name)?
+    - What do I need to run [Maya](application_name) effectively?
+    - Suggest components for building a gaming rig for [Overwatch](application_name).
+    - I’m planning to build a PC for editing videos with [Final Cut Pro](application_name).
+    - Can you list the components required for playing [Assassin's Creed Valhalla](application_name)?
+    
+
+- lookup: application_name
+  examples: |    
+    - far cry 2
+    - Halo
+    - PUBG
+    - Apex Legends
+    - Adobe Photoshop
+    - Counter-Strike 2     
+    - NetBeans
+    - Excel
+    - GIMP
+    - Adobe Premiere Pro
+    - GTA V
+    - Counter-Strike 2
+    - Microsoft Word
+    - AutoCAD
+    - PowerPoint
+    - Minecraft
+    
+    
+
+- intent: item_price
+  examples: |
+    - What is the price of [Intel i5](item_name)?
+    - How much does the [Intel i3](item_name) cost?
+    - Can you tell me the price of the [Macbook M2 air](item_name)?
+    - What's the price for the [Lenovo IdeaPad Flex 5](item_name)?
+    - I'm interested in the [Logitech M187](item_name), how much is it?
+    - What's the price tag on the [Samsung Galaxy S24](item_name)?
+    - How much do the (item_name) cost?
+    - Can you give me the price of the (item_name)?
+    - What's the price of the (item_name)?   
+
+- intent: ask_item_pic
+  examples: |
+    - show [Intel i5](item_name)
+    - show me a picture of [Intel i5](item_name)
+    - show me a image of [Intel i3](item_name) 
+    - Can you show me a picture of the [Macbook M2 air](item_name)?
+    - Can you show me a image of the [Samsung Galaxy S24](item_name)?
+    - show me [Lenovo IdeaPad Flex 5](item_name)
+    - I'm interested in the [DDR5 RAM](item_name), show me it.
+    - give me a image of (item_name).
+
+- intent: asking_capabilities
+  examples: |
+    - What can you do?
+    - What are your capabilities?
+    - How can you help me?
+    - Tell me what you can do.
+    - What are your features?
+    - What services do you offer?
+    - How can you assist me?
+    - What tasks can you perform?
+    - What functions are available?
+    - Can you explain your capabilities?
+    - What is within your scope?
+    - What are your key features?
+    - How can you support me?
+    - What can you help with?
+    - What are you able to do for me?
+
+- intent: ask_available_items
+  examples: |
+    - What items are available?
+    - Can you show me the available items?
+    - Can you show me the available items with price?
+    - List down the items in stock.
+    - Show me what I can buy.
+    - What can I purchase?
+    - What products do you have in store?
+    - What items are currently in stock?
+    - Can you provide a list of available products?
+    - What is available for purchase?
+    - Do you have a catalog of items?
+    - What are the products I can choose from?
+    - What merchandise do you offer?
+    - Are there any new items available?
+    - What is the current inventory?
+
+- intent: ask_available_one_item
+  examples: |
+    - Do you have [Intel i5](item_name) in stock?
+    - Is the [Intel Core i9](item_name) available?
+    - Can I buy a [Samsung 970 EVO SSD](item_name) from your store?
+    - Do you sell [Intel i3](item_name)?
+    - Are there any [Macbook M2 air](item_name) in your shop?
+    - Is the [Dell XPS 13](item_name) laptop available?
+    - Do you have any [Logitech G502 mouse](item_name) left?
+    - Can I find [Lenovo IdeaPad Flex 5](item_name) here?
+    - Is the [HP Omen 15](item_name) in stock?
+
+- intent: ask_discount_on_item
+  examples: |
+    - Is there a discount on [Intel i5](item_name)?
+    - Are there any discounts for the [Intel Core i9](item_name)?
+    - Can I get a discount on [Samsung 970 EVO SSD](item_name)?
+    - Do you offer discounts on [Intel i3](item_name)?
+    - Is there any sale on [Macbook M2 air](item_name)?
+    - Are there any promotions for the [Dell XPS 13](item_name)?
+    - Do you have any deals on [Logitech G502 mouse](item_name)?
+    - Are there any special offers for [Lenovo IdeaPad Flex 5](item_name)?
+    - Can I get the [HP Omen 15](item_name) at a discounted price?
+
+- intent: ask_warranty_on_item
+  examples: |
+    - What is the warranty on [Intel i5](item_name)?
+    - How long is the warranty for the [Intel Core i9](item_name)?
+    - Can you tell me the warranty period for [Samsung 970 EVO SSD](item_name)?
+    - What kind of warranty does [Intel i3](item_name) come with?
+    - Is there a warranty on the [Macbook M2 air](item_name)?
+    - How many years of warranty does the [Dell XPS 13](item_name) have?
+    - Do you provide any warranty for [Logitech G502 mouse](item_name)?
+    - What is the warranty period for the [Lenovo IdeaPad Flex 5](item_name)?
+    - How long is the [HP Omen 15](item_name) covered under warranty?
+
+- intent: ask_description_of_item
+  examples: |
+    - Can you describe the [Intel i5](item_name)?
+    - What are the features of the [Intel Core i9](item_name)?
+    - Tell me about the [Samsung 970 EVO SSD](item_name).
+    - What are the specifications of the [Intel i3](item_name)?
+    - Can you provide a description of the [Macbook M2 air](item_name)?
+    - What details can you give me about the [Dell XPS 13](item_name)?
+    - Describe the [Logitech G502 mouse](item_name).
+    - What can you tell me about the [Lenovo IdeaPad Flex 5](item_name)?
+    - Give me the specs for the [HP Omen 15](item_name).
+
+- lookup: item_name
+  examples: |    
+    - Lenovo IdeaPad Flex 5
+    - Intel i3
+    - Intel i5     
+    - Logitech M187
+    - Macbook M2 air
+    - Samsung Galaxy S24
+    - Nokia 105  
+    - Intel i7  
+    - Dell XPS 13
+    - Apple MacBook Air M1
+    - HP Pavilion Gaming Laptop
+    - Dell Inspiron 15 3000
+    - Logitech MX Master 3 Mouse
+    - Corsair K95 RGB Mechanical Keyboard
+    - Lenovo ThinkPad T14s
+    - Samsung 970 EVO Plus SSD 1TB
+    - Acer Predator Helios 300
+    - Asus ROG Strix G15
+    - Microsoft Surface Go 3
+    - Razer Blade 15 Advanced
+    - Apple iMac 24-inch M1
+    - Seagate Barracuda 2TB HDD
+    - Kingston A2000 NVMe SSD 500GB
+    - Corsair Vengeance LPX 16GB DDR4 RAM
+    - Acer Aspire 5
+    - Logitech G Pro X Gaming Headset
+    - HP Omen 25L Gaming Desktop
+    - Samsung Odyssey G7 27-inch Monitor
+    - TP-Link Archer AX50 Wi-Fi 6 Router
+
+- intent: turn_light_mode_on
+  examples: |
+    - Turn off dark mode
+    - Turn on light mode
+    - Switch to light mode
+    - Enable light mode
+    - Disable dark mode
+    - Can you turn on light mode?
+    - I want light mode on
+    - Set theme to light
+    - Switch to bright theme
+    - Go to light mode
+    - Change to light theme
+    - Make the screen brighter
+
+- intent: turn_dark_mode_on
+  examples: |
+    - Turn off light mode
+    - Turn on dark mode
+    - Switch to dark mode
+    - Enable dark mode
+    - Disable light mode
+    - Can you turn off light mode?
+    - I want dark mode on
+    - Set theme to dark
+    - Switch to dark theme
+    - Go to dark mode
+    - Change to dark theme
+    - Make the screen darker
+
+- intent: enable_text_to_speech
+  examples: |
+    - Turn on text to speech
+    - Enable text to speech
+    - Can you start speaking responses?
+    - I want text to speech
+    - Start text to speech
+    - Speak your responses
+    - Activate text to speech mode
+    - Turn text-to-speech functionality on
+    - Enable voice output
+
+- intent: disable_text_to_speech
+  examples: |
+    - Turn off text to speech
+    - Disable text to speech
+    - Can you stop speaking responses?
+    - I don't want text to speech
+    - Stop text to speech
+    - Mute your responses
+    - Deactivate text to speech mode
+    - Turn text to speech functionality off
+    - Disable voice output
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: asking_about_shop
+  examples: |
+    - How would you describe your shop in a few words?
+    - How would you describe your shop to someone who is unfamiliar with it?
+    - Tell me about your shop.
+    - What is your shop?
+    - What makes your shop unique?
+    - What kind of shop is this?
+    - Can you tell me more about your store?
+    - What products and services do you offer?
+    - How would you summarize your shop’s offerings?
+    - What sets your shop apart from others?
+    - What can I expect when I visit your shop?
+    - What type of store are you?
+    - How would you characterize your business?
+    - What is the focus of your shop?
+    - What specialties does your shop have?
+
+- intent: asking_about_working_hours
+  examples: |
+    - What are your working hours?
+    - When do you open?
+    - When do you close?
+    - What time do you open and close?
+    - Can you tell me your store hours?
+    - What are your business hours?
+    - What time does the shop open?
+    - What time does the store close?
+    - When is the store open?
+    - When is your shop open?
+    - What hours are you open?
+    - When can I visit the store?
+    - What are the hours of operation?
+    - What are your operating hours?
+    - When is your store open for customers?
+
+- intent: asking_about_location
+  examples: |
+    - Where is your store located?
+    - Where can I find your shop?
+    - What is the address of your store?
+    - Can you give me the directions to your shop?
+    - Where are you situated?
+    - What is your location?
+    - Where is your shop?
+    - How can I reach your store?
+    - Where is your store?
+    - Where are you located?
+    - What’s your store address?
+    - Where can I find you?
+    - What’s the location of your shop?
+    - Where is the computer shop?
+
+- intent: asking_home_delivery
+  examples: |
+    - Do you offer home delivery?
+    - Is home delivery available?
+    - Can you deliver items to my home?
+    - Do you provide home delivery service?
+    - Can I get this delivered to my house?
+    - Is there a home delivery option?
+    - Do you deliver to residences?
+    - Can you send this to my home?
+    - Do you have a home delivery service?
+    - Can you deliver this to my address?
+    - Is it possible to get home delivery?
+    - Can you deliver this product to my home?
+    - Do you offer delivery to my home?
+    - Is home delivery possible?
+    - Can you provide home delivery?    
+
+- intent: asking_how_to_claim_warranty
+  examples: |
+    - How do I claim warranty service?
+    - What’s the process for claiming warranty?
+    - How can I use my warranty?
+    - How do I get warranty service?
+    - How can I claim the warranty?
+    - What do I need to do to claim the warranty?
+    - How do I file a warranty claim?
+    - How can I activate the warranty?
+    - What is the procedure to claim warranty?
+    - How do I claim my warranty?
+    - How do I get my product serviced under warranty?
+    - What steps do I follow to claim warranty?
+    - Can you tell me how to claim warranty?
+    - How do I use the warranty for my product?
+    - What’s the warranty claim process?
+
+- intent: asking_about_discounts
+  examples: |
+    - Do you have any discounts?
+    - Are there any current promotions?
+    - Can I get a discount on my purchase?
+    - What discounts are available?
+    - Are there any special offers right now?
+    - Do you offer any sales?    
+    - What are the current deals?
+    - Are there any ongoing promotions?
+    - Do you offer bulk discounts ?
+    
+
+- intent: asking_about_bulk_discounts
+  examples: |
+    - Do you offer bulk discounts for corporate orders?
+    - Are there discounts for bulk purchases?
+    - Can I get a discount if I buy in bulk?
+    - Do you have special rates for bulk orders?
+    - Is there a discount for buying in large quantities?
+    - Do you offer bulk purchase discounts?
+    - Are there any deals for bulk buying?
+    - Do you provide discounts for large orders?
+    - Can I get a bulk discount?
+    - What discounts do you offer for bulk purchases?
+    - Are there bulk discounts available?
+    - Do you have bulk order discounts?
+    - Can I get a reduced price for bulk orders?
+    - Do you offer special pricing for corporate bulk orders?
+    - Are bulk discounts provided for businesses?
+
+- intent: asking_about_payments
+  examples: |
+    - What payment methods do you accept?
+    - How can I pay for my purchase?
+    - Do you accept credit cards?
+    - Can I pay with cash?
+    - What forms of payment do you take?
+    - Do you accept debit cards?
+    - Is PayPal an option for payment?
+    - Can I use a bank transfer to pay?
+    - Do you take mobile payments?
+    - What are the available payment options?
+    - Can I pay using online banking?
+    - Do you accept checks?
+    - What payment methods are available?
+    - Is there a way to pay in installments?
+    - Do you offer financing options for payment?
+
+- intent: asking_about_return_policy
+  examples: |
+    - What is your return policy?
+    - How do I return a product?
+    - Can I return an item if I change my mind?
+    - What are the rules for returning merchandise?
+    - How long do I have to return a product?
+    - Are there any conditions for returning items?
+    - What’s the process for returning a purchase?
+    - Can I get a refund if I return a product?
+    - Do you accept returns on sale items?
+    - What is the procedure for returning a product?
+    - How can I return something I bought?
+    - Are there any fees for returning an item?
+    - Can I return a product without a receipt?
+    - What’s your policy on product returns?
+    - How do I claim a return for a faulty item?
+
+- intent: asking_about_exchange_product
+  examples: |
+    - How can I exchange a faulty product?
+    - What is the procedure for exchanging a defective item?
+    - Can I exchange a product if it’s not working correctly?
+    - What steps should I follow to process a product exchange?
+    - Are there specific requirements for exchanging an item?
+    - How do I go about exchanging a product I am dissatisfied with?
+    - What is the policy on exchanging faulty merchandise?
+    - Can you provide details on how to exchange a malfunctioning product?
+    - What documentation is needed for an exchange?
+    - Are exchanges allowed for items that have been opened?
+    - How long do I have to request an exchange for a defective product?
+    - What are the conditions for exchanging a product purchased from your store?
+    - Is there a form or procedure for initiating an exchange?
+    - Can I exchange a product for a different model or variant?
+    - What is the timeframe for processing product exchanges?
+
+- intent: asking_about_customer_support
+  examples: |
+    - How can I contact customer support?
+    - What’s the phone number for customer service?
+    - How do I get in touch with support?
+    - Can you provide contact details for customer service?
+    - What’s the email address for customer support?
+    - How can I reach your support team?
+    - Where can I find customer service contact information?
+    - Is there a chat service for customer support?
+    - What are the hours for customer support?
+    - How do I speak to a customer service representative?
+    - Can I get assistance from customer support online?
+    - What’s the best way to contact support?
+    - How can I get help from your customer service team?
+    - Do you have a support hotline?
+    - How do I file a complaint or request support?
+
+- intent: bot_challenge
+  examples: |
+    - Are you a bot?
+    - Are you a human?
+    - Am I talking to a bot?
+    - Am I talking to a human?
+    - Who are you?
+    - Tell me about yourself.
+    - Are you a real person?
+    - What are you?
+    - Can you explain what you are?
+    - Is this an automated response?
+    - Are you a machine or a human?
+    - Who am I interacting with?
+    - Are you an AI?
+    - Is there a person on the other end?
+    - What kind of assistant are you?
+    - i want to know about you ?
+
+
+- intent: inquire_cctv_price
+  examples: |
+    - What is the price of CCTV?
+    - How much does a CCTV cost?
+    - Tell me the price of your CCTV cameras.
+    - What's the cost of CCTV?
+    - Can you give me the price details of CCTV?
+    - What are the prices for CCTV systems?
+    - How much are your CCTV products?
+    - Can you provide the cost of CCTV cameras?
+    - What is the pricing for CCTV equipment?
+    - What is the cost range for your CCTV options?
+    - How much do CCTV cameras sell for?    
+    - What is the price range for CCTV systems?
+    
+
+- intent: inquire_cctv_installation
+  examples: |
+    - How do I get CCTV installed?
+    - Do you offer CCTV installation services?
+    - How can I install a CCTV in my shop?
+    - Can you install CCTV cameras?
+    - Tell me about your CCTV installation service.
+
+- intent: inquire_cctv_operation
+  examples: |
+    - How do I operate a CCTV camera?
+    - Can you explain how to use CCTV?
+    - How does a CCTV camera work?
+    - What are the basic operations of a CCTV?
+    - How can I control the CCTV system?
+
+- intent: ask_repairs
+  examples: |
+    - Do you do repairs?
+    - Can you repair my computer?
+    - Do you offer repair services?
+    - Do you fix computers?
+    - Can I get my laptop repaired here?
+    - Do you do hardware repairs?
+    - Is computer repair available?
+    - Can you repair electronics?
+    - Do you have repair services?
+    - Are repairs offered in the shop?
+    - Can you help with device repairs?
+    - What types of repairs do you offer?
+    - Do you provide repair services for gadgets?    
+    - What kind of repairs can you handle?
+
+- intent: inquire_computer_types
+  examples: |
+    - What types of computers do you sell?
+    - Can you tell me about the kinds of computers available?
+    - What different computers do you have in stock?
+    - Do you sell laptops and desktops?
+    - What computer categories are available?
+    - What kinds of PCs are you selling?
+    - Can you list the types of computers you offer?
+
+- intent: inquire_gaming_laptops
+  examples: |
+    - Do you sell gaming laptops?
+    - Are there any gaming laptops available?
+    - What gaming laptops do you have?
+    - Can I buy a gaming laptop from your store?
+    - What brands of gaming laptops do you offer?
+    - Do you have gaming laptops in stock?
+    - Are there gaming laptops for sale?
+    - What are the options for gaming laptops?
+    - Can you show me the gaming laptops you have?
+
+- intent: inquire_best_laptops_for_students
+  examples: |
+    - What are the best laptops for students?
+    - Can you recommend some good laptops for students?
+    - What laptops are best for school?
+    - Which laptops do you suggest for students?
+    - What are the top student laptops?
+    - Do you have any recommendations for student laptops?
+    - What are the best options for student laptops?
+    - Can you suggest a laptop for a student?
+    - What laptops would you recommend for college students?
+    - What features should I look for in a student laptop?
+
+- intent: inquire_desktop_for_graphic_design
+  examples: |
+    - Can you recommend a desktop for graphic design?
+    - What desktop should I get for graphic design?
+    - What are the best desktops for graphic design?
+    - Which desktop is ideal for graphic design work?
+    - Can you suggest a good desktop for graphic design?
+    - What features should a desktop have for graphic design?
+    - What are the top desktops for graphic design?
+    - Do you have recommendations for graphic design desktops?
+    - What specifications are important for a graphic design desktop?
+    - What desktop do you recommend for a graphic designer?
+
+- intent: inquire_budget_computers
+  examples: |
+    - Do you have any budget-friendly computers?
+    - What are the cheapest computers you offer?
+    - Can you recommend an affordable computer?
+    - I'm looking for a computer that won't break the bank.
+    - What are the best low-cost computer options you have?
+    - Can you suggest a good computer for a tight budget?
+    - What’s the most affordable PC you have in stock?
+    - Are there any computers on sale that are budget-friendly?
+    - Do you have any entry-level computers available?
+    - Can you show me your budget computer range?
+
+- intent: inquire_refurbished_computers
+  examples: |
+    - Do you sell refurbished computers?
+    - Are refurbished computers available in your store?
+    - Do you offer second-hand computers?
+    - What refurbished computers do you have in stock?
+    - Can you tell me about your selection of refurbished PCs?
+    - Are there any warranty options for refurbished computers?
+    - How can I buy a refurbished computer from you?
+    - Do you have certified pre-owned computers for sale?
+    - What brands of refurbished computers do you carry?
+    - Are refurbished laptops available as well?
+
+- intent: inquire_best_brands
+  examples: |
+    - What are the best brands you offer?
+    - Which computer brands do you recommend?
+    - Do you sell high-quality computer brands?
+    - What are the top brands available in your store?
+    - Can you list some of the premium computer brands you carry?
+    - Which brands are considered the best for gaming computers?
+    - What are the most popular brands for business laptops?
+    - Do you have any top-rated brands for desktops?
+    - What brands offer the best performance in your store?
+    - Are there any leading brands you suggest for high-end PCs?
+
+- intent: inquire_antivirus_software
+  examples: |
+    - Do you sell antivirus software?
+    - Can I buy antivirus software from your store?
+    - What antivirus programs do you offer?
+    - Which antivirus software is available in your shop?
+    - Do you have any recommendations for antivirus protection?
+    - What are the best antivirus options you carry?
+    - Can you tell me about the antivirus software you sell?
+    - Are there any discounts on antivirus software right now?
+    - Do you offer any antivirus software bundles?
+    - What’s the price range for antivirus programs in your store?
+
+- intent: inquire_laptop_accessories
+  examples: |
+    - What accessories do you have for laptops?
+    - Do you sell laptop chargers and bags?
+    - Can you tell me about the laptop accessories you offer?
+    - What types of laptop accessories are available in your store?
+    - Are there any laptop cases or sleeves that you recommend?
+    - Do you have any external keyboards or mice for laptops?
+    - What laptop docking stations do you carry?
+    - Can you show me your selection of laptop stands?
+    - Are there any popular laptop accessories you offer?
+    - Do you offer any cleaning kits or screen protectors for laptops?
+
+- intent: inquire_custom_computer
+  examples: |
+    - Can I customize my computer order?
+    - Do you offer options for custom-built computers?
+    - How can I personalize my computer order?
+    - What customization options are available for computers?
+    - Can I choose specific components for a custom PC?
+    - How do I go about configuring a custom computer?
+    - Are there any special features I can add to a custom PC?
+    - What’s the process for building a computer to my specifications?
+    - Do you offer any custom design services for computers?
+    - Can I select custom colors or designs for my computer?
+
+- intent: inquire_custom_pc_build
+  examples: |
+    - Do you offer custom-built PCs?
+    - Can I get a PC built specifically for gaming or work?
+    - Do you provide custom PC building services?
+    - Can you build a PC tailored to my specific needs?
+    - What options do you offer for custom PC builds?
+    - Are there any special packages for custom PC assembly?
+    - How do I request a custom-built PC from your store?
+    - Can I choose specific components for a custom PC build?
+    - What are the benefits of a custom-built PC versus a pre-built one?
+    - Do you offer consultations for custom PC builds?
+
+- intent: inquire_custom_pc_build_time
+  examples: |
+    - How long does it take to build a custom PC?
+    - What’s the delivery time for a custom PC?
+    - How much time is required for a custom PC build?
+    - What is the estimated completion time for a custom-built PC?
+    - How soon can I expect my custom PC to be ready?
+    - Is there a typical turnaround time for custom PC builds?
+    - How many days does it usually take to assemble a custom PC?
+    - When can I expect to receive my custom-built PC?
+    - Are there any expedited options for custom PC builds?
+    - How does the build time vary for different custom PC specifications?
+
+
+
+- intent: inquire_shipping_cost
+  examples: |
+    - How much is the shipping cost?
+    - What’s the delivery fee?
+    - Do you charge for shipping?
+    - Can you tell me the shipping rates for my location?
+    - What is the cost to ship an item to my address?
+    - Are there any shipping fees for orders over a certain amount?
+    - How do you calculate shipping costs?
+    - Is shipping free for certain products or orders?
+    - What are the shipping charges for international deliveries?
+    - Do you offer any discounts on shipping fees?
+    
+
+- intent: inquire_order_delivery_time
+  examples: |
+    - When will my order be delivered?
+    - What’s the expected delivery date?
+    - How long until I receive my order?
+    - Can you provide an estimated delivery time for my order?
+    - What is the typical delivery time for your orders?
+    - How many days will it take to get my order?
+    - Is there a way to track the delivery status of my order?
+    - When should I expect to receive my shipment?
+    - Are there any delays expected with my order delivery?
+    - How do I find out the delivery timeframe for my order?
+
+- intent: inquire_review_submission
+  examples: |
+    - How do I leave a review on your site?
+    - Can I write a review for the product I purchased?
+    - How can I submit feedback on your website?
+    - What’s the process for writing a review for a product?
+    - Where can I post my review for a recent purchase?
+    - Is there a form to submit my product feedback?
+    - How can I share my experience with a product on your site?
+    - Can you guide me through leaving a review?
+    - What steps should I follow to rate a product?
+    - How do I edit or update a review I’ve submitted?
+
+- intent: inquire_gift_cards
+  examples: |
+    - Do you have gift cards available?
+    - Can I purchase a gift card from your store?
+    - Do you offer digital or physical gift cards?
+    - What types of gift cards do you sell?
+    - Are gift cards available for online or in-store use?
+    - How can I buy a gift card from your shop?
+    - What denominations are available for your gift cards?
+    - Do you have any promotions on gift cards right now?
+    - Can I send a gift card as a present?
+    - How do I check the balance on a gift card?    
+
+- intent: inquire_privacy_policy
+  examples: |
+    - What is your privacy policy?
+    - Can you tell me about your data privacy practices?
+    - How do you handle customer data?
+    - Where can I find information about your privacy policy?
+    - What measures do you take to protect user privacy?
+    - How do you use and safeguard my personal information?
+    - Can you provide details about your data protection policies?
+    - Do you share customer data with third parties?
+    - How can I access or update my personal data?
+    - What rights do I have regarding my data?
+

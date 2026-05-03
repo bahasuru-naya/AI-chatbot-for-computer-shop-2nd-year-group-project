@@ -1,0 +1,18 @@
+[
+  {
+    "text": "show me Lenovo IdeaPad Flex 5",
+    "intent": "ask_item_pic",
+    "intent_prediction": {
+      "name": "ask_discount_on_item",
+      "confidence": 0.4602734446525574
+    }
+  },
+  {
+    "text": "Do you offer bulk discounts ?",
+    "intent": "asking_about_discounts",
+    "intent_prediction": {
+      "name": "asking_about_bulk_discounts",
+      "confidence": 0.5723455548286438
+    }
+  }
+]

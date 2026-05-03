@@ -1,0 +1,249 @@
+version: "3.1"
+
+intents:
+    - find_components
+    - asking_help
+    - greet
+    - goodbye
+    - affirm
+    - deny
+    - asking_about_shop
+    - bot_challenge
+    - item_price
+    - ask_item_pic
+    - asking_capabilities
+    - ask_available_items
+    - ask_available_one_item
+    - ask_discount_on_item
+    - ask_warranty_on_item
+    - ask_description_of_item
+    - asking_about_working_hours
+    - asking_about_location
+    - asking_home_delivery
+    - asking_how_to_claim_warranty
+    - asking_about_bulk_discounts
+    - asking_about_payments
+    - asking_about_return_policy
+    - asking_about_exchange_product
+    - asking_about_customer_support
+    - inquire_cctv_price
+    - inquire_cctv_installation
+    - inquire_cctv_operation
+    - inquire_computer_types
+    - inquire_gaming_laptops
+    - inquire_best_laptops_for_students
+    - inquire_desktop_for_graphic_design
+    - inquire_budget_computers
+    - inquire_best_brands
+    - inquire_refurbished_computers
+    - inquire_antivirus_software
+    - inquire_laptop_accessories
+    - inquire_custom_computer
+    - inquire_custom_pc_build
+    - inquire_custom_pc_build_time
+    - inquire_shipping_cost
+    - inquire_order_delivery_time
+    - inquire_review_submission
+    - inquire_gift_cards
+    - inquire_privacy_policy
+    - ask_repairs
+    - asking_about_discounts
+    - turn_light_mode_on
+    - turn_dark_mode_on
+    - enable_text_to_speech
+    - disable_text_to_speech
+
+entities:
+    - application_name
+    - item_name
+
+responses:
+    utter_default:
+    - text: "Sorry I didn't get that. Can you rephrase?"
+
+    utter_greet:
+      - text: "Hi, I'm your Computer Shop assistant. How can I help you ?"
+
+    utter_ask_working_hours:
+      - text: "Our store is open from 9 AM to 6 PM, Monday to Saturday. We're closed on Sundays."
+
+    utter_location:
+      - text: "We are located at Ambalangoda."
+
+    utter_home_delivery:
+      - text: "we offer home delivery for all online orders. Delivery times and charges depend on your location."
+
+    utter_how_to_claim_warranty:
+      - text: "You can claim warranty service by bringing your product to our store along with the purchase receipt."
+
+    utter_about_bulk_discounts:
+      - text: "we offer special discounts for bulk orders. Please contact our sales department for more details."
+
+    utter_about_payments:
+      - text: "We accept cash, credit/debit cards, and online payments."
+
+    utter_about_return_policy:
+      - text: "We have a 30-day return policy for unopened products. For more details, please visit our return policy page."
+
+    utter_about_exchange_product:
+      - text: "You can exchange a faulty product by bringing it to our store with the purchase receipt and warranty card."
+
+    utter_about_customer_support:
+      - text: "You can reach our customer support via email at rkcomputer909@gmail.com or call us at 070 256 6205."
+
+    utter_ask_application:
+      - text: "Sure, I can help you choose PC components for PC. Could you please provide \n
+      the application which you will use?"
+
+    utter_no_results:
+      - text: "I couldn't find any components for that application. Please try again or provide more details."
+
+    utter_components:
+      - text: "For the application '{application_name}', here are the recommended components:\n
+       - Application Type: {application_type}\n
+       - Processor: {processor}\n
+       - Storage: {storage}\n
+       - Video RAM: {video_ram}\n
+       - RAM: {ram} "
+
+    utter_no_application_provided:
+      - text: "You haven't provided the application name. Please specify the application name \n
+      for component recommendations."
+
+    utter_give_capabilities:
+      - text: "I can provide recommendations for purchasing PC components, including images, prices, and availability. \n 
+      Additionally, I can display the available items in the store and provide contact information for inquiries. \n 
+      Furthermore, I am equipped to furnish comprehensive details about the store."
+
+    utter_did_that_help:
+      - text: "Did that help you?"
+
+    utter_happy:
+      - text: "Great, carry on!"
+
+    utter_sad:
+      - text: "Sorry, Please try again!"
+
+    utter_about:
+      - text: "RK Computers and CCTV Operations, based in Ambalangoda (Sri Lanka), is your go-to destination for cutting-edge \n
+        technology solutions.Established with a vision of providing unparalleled services in computers and security systems, \n
+        we pride ourselves on being a reliable partner for both individuals and businesses. Our vision is to see technology  \n
+        seamlessly integrate into everyday life, empowering individuals and businesses to thrive in a connected and secure   \n
+        environment. See about section for more information"
+
+    utter_cctv_price:
+      - text: "Our CCTV cameras start at Rs.10000.00 , with advanced models priced up to Rs.500000.00. If you're looking for specific features or brands, we can provide detailed pricing."
+
+    utter_cctv_installation:
+      - text: "We offer professional CCTV installation services. Our team can install and configure the cameras at your location. The installation cost starts at $50, depending on the complexity."
+
+    utter_cctv_operation:
+      - text: "Operating a CCTV camera is straightforward. You can monitor live footage through a connected device, adjust camera angles remotely, and review recorded footage via the DVR/NVR system. \n
+        We provide a user manual and support for setup and operation."
+
+    utter_ask_repairs:
+      - text: "Yes, we offer repair services. Please bring your faulty device to our shop, and we'll take a look at it for you."
+
+    utter_asking_about_discounts:
+      - text: "We have various discounts and promotions. Could you specify which items or services you're interested in?"
+
+    utter_gaming_laptops:
+      - text: " Yes, we have a selection of gaming laptops from various top brands. You can find models from brands like ASUS, MSI, Dell, and Acer. Each offers high-performance specifications suitable for gaming. \n
+      Please check our website or visit our store for the latest models and pricing."
+
+    utter_goodbye:
+      - text: "Bye. See you later"
+
+    utter_computer_types:
+      - text: " We offer a variety of computers including: \n          
+          
+          - Laptops: Portable and versatile, ideal for work, study, and entertainment. \n
+          - Desktops: Powerful machines for gaming, professional work, or home use. \n
+          - Gaming PCs: High-performance systems built for gamers. \n
+          - Workstations: Designed for professional applications like video editing and 3D rendering.\n
+          - All-in-One PCs: Space-saving desktops with integrated monitors."
+
+    utter_iamabot:
+      - text: "I am a Computer Shop assistant AI chatbot, created by Bahasuru Nayanakantha."
+
+    utter_best_laptops_for_students:
+      - text: "We recommend lightweight laptops with long battery life, which are ideal for students. \n
+       Some great options include models from Dell, HP, and Apple. These brands offer reliable laptops that balance performance, portability, and battery life, making them perfect for schoolwork and everyday use."
+
+    utter_desktop_for_graphic_design:
+      - text: " For graphic design, we recommend desktops with high-performance processors, ample RAM, and a dedicated graphics card. These features are essential for handling demanding design software and large files efficiently. \n
+      Brands like Dell, HP, and Lenovo offer excellent options tailored for graphic design needs. "
+
+    utter_budget_computers:
+      - text: "Yes, we have several budget-friendly options starting from Rs.30000.00. Would you like to explore them?"
+
+    utter_refurbished_computers:
+      - text: "Yes, we do sell refurbished computers. They are fully tested and come with a warranty. Would you like more details?"
+
+    utter_best_brands:
+      - text: "We offer top brands such as Apple, Dell, HP, and Lenovo. "
+
+    utter_antivirus_software:
+      - text: "Yes, we sell antivirus software like Norton, McAfee, and Kaspersky. "
+
+
+    utter_laptop_accessories:
+        - text: "We offer chargers, cases, docking stations, and more for laptops. "
+
+    utter_custom_computer:
+      - text: "Yes, we allow customization for your computer order."
+
+    utter_custom_pc_build:
+      - text: "We do offer custom-built PCs tailored to your needs."
+
+    utter_custom_pc_build_time:
+      - text: "Building a custom PC typically takes 5-7 business days."
+
+    utter_shipping_cost:
+      - text: "Shipping costs vary depending on location. Generally, it starts from Rs.3000."
+
+    utter_order_delivery_time:
+      - text: "Your order will be delivered within 3-5 business days."
+
+    utter_review_submission:
+      - text: "To leave a review, simply go to the product page and click 'Leave a Review'. Thank you for your feedback!"
+
+    utter_gift_cards:
+      - text: "Yes, we offer both digital and physical gift cards. Would you like to purchase one now?"
+
+    utter_privacy_policy:
+      - text: "You can view our full privacy policy on our website. Let us know if you have any questions."
+
+    utter_turn_light_mode_on:
+      - text: "Got it! Turning on light mode for you."
+
+    utter_turn_dark_mode_on:
+      - text: "Alright! Switching to dark mode now."
+
+    utter_enable_text_to_speech:
+      - text: "enabling text to speech."
+
+    utter_disable_text_to_speech:
+      - text: "disabling text to speech."
+
+    utter_please_try_again:
+      - text: "I'm sorry, It seems like you're asking a question that is outside the scope of my capabilities.\n
+       Please rephrase your question or try another one. For more assistance, please contact our customer\n
+      service ."
+
+actions:
+  - action_find_components
+  - action_give_price
+  - action_show_item
+  - action_list_available_items
+  - action_check_item_availability
+  - action_check_discount
+  - action_check_warranty
+  - action_describe_item
+  - action_nlu_fallback
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

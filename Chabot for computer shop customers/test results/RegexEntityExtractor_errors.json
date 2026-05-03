@@ -1,0 +1,602 @@
+[
+  {
+    "text": "I want to build a PC for playing Far Cry 1.",
+    "entities": [
+      {
+        "start": 33,
+        "end": 42,
+        "value": "Far Cry 1",
+        "entity": "application_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "application_name",
+        "start": 33,
+        "end": 42,
+        "confidence_entity": 0.9786643981933594,
+        "value": "Far Cry 1",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Help me choose components to run Blender smoothly.",
+    "entities": [
+      {
+        "start": 33,
+        "end": 40,
+        "value": "Blender",
+        "entity": "application_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "application_name",
+        "start": 33,
+        "end": 40,
+        "confidence_entity": 0.9981801509857178,
+        "value": "Blender",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Can you recommend PC parts for using Unity 3D?",
+    "entities": [
+      {
+        "start": 37,
+        "end": 45,
+        "value": "Unity 3D",
+        "entity": "application_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "application_name",
+        "start": 37,
+        "end": 45,
+        "confidence_entity": 0.9988493919372559,
+        "value": "Unity 3D",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What specs should I consider for using DaVinci Resolve?",
+    "entities": [
+      {
+        "start": 39,
+        "end": 54,
+        "value": "DaVinci Resolve",
+        "entity": "application_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "application_name",
+        "start": 39,
+        "end": 54,
+        "confidence_entity": 0.9991680383682251,
+        "value": "DaVinci Resolve",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What do I need to run Maya effectively?",
+    "entities": [
+      {
+        "start": 22,
+        "end": 26,
+        "value": "Maya",
+        "entity": "application_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "application_name",
+        "start": 22,
+        "end": 26,
+        "confidence_entity": 0.9988822340965271,
+        "value": "Maya",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Suggest components for building a gaming rig for Overwatch.",
+    "entities": [
+      {
+        "start": 49,
+        "end": 58,
+        "value": "Overwatch",
+        "entity": "application_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "application_name",
+        "start": 49,
+        "end": 58,
+        "confidence_entity": 0.9992306232452393,
+        "value": "Overwatch",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I’m planning to build a PC for editing videos with Final Cut Pro.",
+    "entities": [
+      {
+        "start": 51,
+        "end": 64,
+        "value": "Final Cut Pro",
+        "entity": "application_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "application_name",
+        "start": 51,
+        "end": 64,
+        "confidence_entity": 0.9966548681259155,
+        "value": "Final Cut Pro",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Can you list the components required for playing Assassin's Creed Valhalla?",
+    "entities": [
+      {
+        "start": 49,
+        "end": 74,
+        "value": "Assassin's Creed Valhalla",
+        "entity": "application_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "application_name",
+        "start": 49,
+        "end": 74,
+        "confidence_entity": 0.99704509973526,
+        "value": "Assassin's Creed Valhalla",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I'm interested in the DDR5 RAM, show me it.",
+    "entities": [
+      {
+        "start": 22,
+        "end": 30,
+        "value": "DDR5 RAM",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 22,
+        "end": 30,
+        "confidence_entity": 0.9994231462478638,
+        "value": "DDR5 RAM",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Is the Intel Core i9 available?",
+    "entities": [
+      {
+        "start": 7,
+        "end": 20,
+        "value": "Intel Core i9",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 7,
+        "end": 20,
+        "confidence_entity": 0.9995692372322083,
+        "value": "Intel Core i9",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Can I buy a Samsung 970 EVO SSD from your store?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 31,
+        "value": "Samsung 970 EVO SSD",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 12,
+        "end": 31,
+        "confidence_entity": 0.9932777285575867,
+        "value": "Samsung 970 EVO SSD",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Do you have any Logitech G502 mouse left?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 35,
+        "value": "Logitech G502 mouse",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 16,
+        "end": 35,
+        "confidence_entity": 0.9992332458496094,
+        "value": "Logitech G502 mouse",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Is the HP Omen 15 in stock?",
+    "entities": [
+      {
+        "start": 7,
+        "end": 17,
+        "value": "HP Omen 15",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 7,
+        "end": 17,
+        "confidence_entity": 0.9982357025146484,
+        "value": "HP Omen 15",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Are there any discounts for the Intel Core i9?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 45,
+        "value": "Intel Core i9",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 32,
+        "end": 45,
+        "confidence_entity": 0.9994674324989319,
+        "value": "Intel Core i9",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Can I get a discount on Samsung 970 EVO SSD?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 43,
+        "value": "Samsung 970 EVO SSD",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 24,
+        "end": 43,
+        "confidence_entity": 0.9930311441421509,
+        "value": "Samsung 970 EVO SSD",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Do you have any deals on Logitech G502 mouse?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 44,
+        "value": "Logitech G502 mouse",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 25,
+        "end": 44,
+        "confidence_entity": 0.9989590644836426,
+        "value": "Logitech G502 mouse",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Can I get the HP Omen 15 at a discounted price?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 24,
+        "value": "HP Omen 15",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 14,
+        "end": 24,
+        "confidence_entity": 0.9982348680496216,
+        "value": "HP Omen 15",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "How long is the warranty for the Intel Core i9?",
+    "entities": [
+      {
+        "start": 33,
+        "end": 46,
+        "value": "Intel Core i9",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 33,
+        "end": 46,
+        "confidence_entity": 0.9994168281555176,
+        "value": "Intel Core i9",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Can you tell me the warranty period for Samsung 970 EVO SSD?",
+    "entities": [
+      {
+        "start": 40,
+        "end": 59,
+        "value": "Samsung 970 EVO SSD",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 40,
+        "end": 59,
+        "confidence_entity": 0.9932716488838196,
+        "value": "Samsung 970 EVO SSD",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Do you provide any warranty for Logitech G502 mouse?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 51,
+        "value": "Logitech G502 mouse",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 32,
+        "end": 51,
+        "confidence_entity": 0.9990652203559875,
+        "value": "Logitech G502 mouse",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "How long is the HP Omen 15 covered under warranty?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 26,
+        "value": "HP Omen 15",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 16,
+        "end": 26,
+        "confidence_entity": 0.9982665777206421,
+        "value": "HP Omen 15",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What are the features of the Intel Core i9?",
+    "entities": [
+      {
+        "start": 29,
+        "end": 42,
+        "value": "Intel Core i9",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 29,
+        "end": 42,
+        "confidence_entity": 0.9995042085647583,
+        "value": "Intel Core i9",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Tell me about the Samsung 970 EVO SSD.",
+    "entities": [
+      {
+        "start": 18,
+        "end": 37,
+        "value": "Samsung 970 EVO SSD",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 18,
+        "end": 37,
+        "confidence_entity": 0.9933940768241882,
+        "value": "Samsung 970 EVO SSD",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Describe the Logitech G502 mouse.",
+    "entities": [
+      {
+        "start": 13,
+        "end": 32,
+        "value": "Logitech G502 mouse",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 13,
+        "end": 32,
+        "confidence_entity": 0.9991870522499084,
+        "value": "Logitech G502 mouse",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Give me the specs for the HP Omen 15.",
+    "entities": [
+      {
+        "start": 26,
+        "end": 36,
+        "value": "HP Omen 15",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 26,
+        "end": 36,
+        "confidence_entity": 0.9978602528572083,
+        "value": "HP Omen 15",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

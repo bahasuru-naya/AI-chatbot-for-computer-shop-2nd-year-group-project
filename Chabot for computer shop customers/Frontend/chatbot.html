@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer shop Assistant</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="./css/style2.css">
+  <link data-n-head="ssr" rel="icon" type="image/png" sizes="96x96" href="images/logo.png">
+
+</head>
+
+<body>
+  <div class="preloader">
+    <img id="load" src="" alt="preloader">
+  </div>
+  <!-- partial:index.partial.html -->
+  <div id="nav-bar">
+    <input id="nav-toggle" type="checkbox" title="nav" />
+
+    <div id="nav-header"><a id="nav-title" href="./index.html" target="_blank"><i class="fas fa-laptop"></i>RK</a>
+      <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+      <hr />
+
+    </div>
+    <div id="nav-content">
+      <div class="nav-button" onclick="location.href='./index.html'"><i
+          class="fas fa-hands-praying"></i><span>Welcome</span></div>
+      <div class="nav-button" onclick="location.href='./chatbot.html'"><i
+          class="fas fa-robot"></i><span>Assistant</span></div>
+      <div class="nav-button" onclick="location.href='./faq.html'"><i
+          class="fas fa-circle-question"></i><span>FAQs</span></div>
+      <div class="nav-button" onclick="location.href='./about.html'"><i class="fas fa-user-friends"></i><span>About
+          us</span></div>
+      <div class="nav-button" onclick="location.href='./feedback.html'"><i
+          class="fas fa-reply"></i><span>Feedback</span></div>
+      <div class="nav-button" onclick="location.href='https://bahasuru-naya.github.io/Computer-shop-website/'"><i class="fas fa-house-chimney"></i></i><span>Back to
+          Home</span></div>
+      <div id="nav-content-highlight"></div>
+      <div id="nav-content-highlight-now"></div>
+    </div>
+    <input id="nav-footer-toggle" type="checkbox" title="footer" />
+
+    <div id="nav-footer">
+      <div id="nav-footer-heading">
+        <div id="nav-footer-avatar"><img src="./images/settings-64.png" alt="Settings" /></div>
+        <label for="nav-toggle"></label>
+        <div id="nav-footer-titlebox">Settings<span id="nav-footer-subtitle">chatbot</span></div>
+        <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+      </div>
+      <div id="nav-footer-content">
+        <p>Dark Mode</p>
+        <label id="darkmode" class="switch" for="dark">
+          <input type="checkbox" id="dark" title="dark mode" checked>
+          <span class="slider"></span>
+        </label>
+        <p>Bot Speaking..</p>
+        <label id="voice-label" for="voice">
+          <input type="checkbox" id="voice" title="Bot Speaking">
+          <div class="moving_circle"></div>
+        </label>
+        <p>Select Voice</p>
+        <div class="outer">
+          <select title="voice list"></select>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="chatbot">
+      <header class="header">
+        <p class="title">Welcome to RK Computers and CCTV Operations</p>
+      </header>
+      <div id="messages">
+        <div id="sliderh">
+          <main>
+
+            <div class="sliderr">
+              <div class="slide-row" id="slide-row">
+                <div class="slide-col">
+                  <div class="content">
+                    <p>Looking for the best PC components? Our AI-powered assistant can provide you with tailored
+                      recommendations based on your needs and preferences</p>
+                    <h2>Recommendations</h2>
+                    <p>Try asking "<a id="s1">What components do I need for use Adobe Premiere Pro</a>"</p>
+                  </div>
+                  <div class="hero">
+                    <img src="images/1.jpeg" alt="avatar">
+                  </div>
+                </div>
+
+                <div class="slide-col">
+                  <div class="content">
+                    <p>Get up-to-date prices for all PC components. Our AI assistant ensures you always have the latest
+                      price information. Try it out!</p>
+                    <h2>Prices</h2>
+                    <p>Try asking "<a id="s2">What is the price of Intel i5</a>"</p>
+                  </div>
+                  <div class="hero">
+                    <img src="images/2.jpeg" alt="avatar">
+                  </div>
+                </div>
+
+                <div class="slide-col">
+                  <div class="content">
+                    <p>See detailed images of various PC components and check what they look like. Our AI assistant's
+                      visual gallery helps you make informed decisions. Check it out now!</p>
+                    <h2>Images</h2>
+                    <p>Try asking "<a id="s3">show me a image of Intel i3</a>"</p>
+                  </div>
+                  <div class="hero">
+                    <img src="images/5.jpeg" alt="avatar">
+                  </div>
+                </div>
+
+                <div class="slide-col">
+                  <div class="content">
+                    <p>Check the availability of items in our store. Our AI assistant can quickly show you what's in
+                      stock. Give it a try!</p>
+                    <h2>Availability</h2>
+                    <p>Try asking "<a id="s4">Can you show me the available items?</a>" or "<a id="s6">Do you sell Intel
+                        i3?</a>"</p>
+                  </div>
+                  <div class="hero">
+                    <img src="images/3.jpeg" alt="avatar">
+                  </div>
+                </div>
+
+                <div class="slide-col">
+                  <div class="content">
+                    <p>Have questions or need more information? Our AI assistant can provide contact details for further
+                      inquiries. Reach out to us!</p>
+                    <h2>Contact</h2>
+                    <p>Try asking "<a id="s5">tell me about your shop?</a>"</p>
+                  </div>
+                  <div class="hero">
+                    <img src="images/4.jpeg" alt="avatar">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="indicator">
+              <span class="btnn active"></span>
+              <span class="btnn"></span>
+              <span class="btnn"></span>
+              <span class="btnn"></span>
+              <span class="btnn"></span>
+            </div>
+          </main>
+
+        </div>
+      </div>
+      <form id="form">
+        <button class="btn record" type="button" title="voice input">
+          <div class="icon">
+            <i class="fas fa-microphone"></i><img src="./images/bars.svg" alt="record" />
+          </div>
+        </button>
+        <div id="text-input">
+          <input id="message-input" type="text" placeholder="Type your question here..." autocomplete="on" />
+          <button class="clear" id="clear" type="button" title="clear"><i class="fas fa-times-circle"></i></button>
+        </div>
+        <button class="button" id="send" type="submit" title="send"><i class="fas fa-location-arrow"></i></button>
+      </form>
+    </div>
+  </div>
+  <!-- partial -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"
+    integrity="sha512-PU5S6BA03fRv1Q5fpwXjg5nlRrgdoguZ74urFInkbABMCENyx5oP3hrDzYMMPh3qdLdknIvrGj3yqZ4JuU7Nag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="js/config.js"></script>
+  <script src="js/script2.js"></script>
+
+</body>
+
+</html>

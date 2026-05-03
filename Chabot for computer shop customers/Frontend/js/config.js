@@ -1,0 +1,4 @@
+AppConfig = {
+    sharedVariable:false
+  };
+

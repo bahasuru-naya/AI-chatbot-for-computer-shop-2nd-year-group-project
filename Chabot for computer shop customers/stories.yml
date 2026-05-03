@@ -1,0 +1,203 @@
+version: "3.1"
+stories:
+- story: asking about components
+  steps:
+  - intent: asking_help
+  - action: utter_ask_application
+  - intent: find_components
+  - action: action_find_components
+
+- story: asking about shop
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: asking_about_shop
+  - action: utter_about
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: give details  the user asks about shop
+  steps:
+    - intent: asking_about_shop
+    - action: utter_about
+
+- story: give capabilities the user asks about bot
+  steps:
+    - intent: asking_capabilities
+    - action: utter_give_capabilities
+
+- story: asking about working hours
+  steps:
+    - intent: asking_about_working_hours
+    - action: utter_ask_working_hours
+
+- story: asking about location
+  steps:
+    - intent: asking_about_location
+    - action: utter_location
+
+- story: asking about home delivery
+  steps:
+    - intent: asking_home_delivery
+    - action: utter_home_delivery
+
+- story: asking about how to claim warranty
+  steps:
+    - intent: asking_how_to_claim_warranty
+    - action: utter_how_to_claim_warranty
+
+- story: asking about bulk discounts
+  steps:
+    - intent: asking_about_bulk_discounts
+    - action: utter_about_bulk_discounts
+
+- story: asking about payments
+  steps:
+    - intent: asking_about_payments
+    - action: utter_about_payments
+
+- story: asking about return policy
+  steps:
+    - intent: asking_about_return_policy
+    - action: utter_about_return_policy
+
+- story: asking about exchange product
+  steps:
+    - intent: asking_about_exchange_product
+    - action: utter_about_exchange_product
+
+- story: asking about exchange product
+  steps:
+    - intent: asking_about_exchange_product
+    - action: utter_about_exchange_product
+
+- story: asking about customer support
+  steps:
+    - intent: asking_about_customer_support
+    - action: utter_about_customer_support
+
+- story: user_inquires_about_cctv_price
+  steps:
+    - intent: inquire_cctv_price
+    - action: utter_cctv_price
+
+- story: user_inquires_about_cctv_installation
+  steps:
+    - intent: inquire_cctv_installation
+    - action: utter_cctv_installation
+
+- story: user_inquires_about_cctv_operation
+  steps:
+    - intent: inquire_cctv_operation
+    - action: utter_cctv_operation
+
+- story: asking about repairs
+  steps:
+    - intent: ask_repairs
+    - action: utter_ask_repairs
+
+- story: asking about discount
+  steps:
+    - intent: asking_about_discounts
+    - action: utter_asking_about_discounts
+
+- story: Say goodbye anytime the user says goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: User asks about computer types
+  steps:
+  - intent: inquire_computer_types
+  - action: utter_computer_types
+
+- story: Say 'I am a bot' anytime the user challenges
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+
+- story: User asks about gaming laptops
+  steps:
+  - intent: inquire_gaming_laptops
+  - action: utter_gaming_laptops
+
+- story: User asks about best laptops for students
+  steps:
+  - intent: inquire_best_laptops_for_students
+  - action: utter_best_laptops_for_students
+
+- story: User asks for a desktop recommendation for graphic design
+  steps:
+  - intent: inquire_desktop_for_graphic_design
+  - action: utter_desktop_for_graphic_design
+
+- story: User asks for budget-friendly computers
+  steps:
+  - intent: inquire_budget_computers
+  - action: utter_budget_computers
+
+- story: User asks about refurbished computers
+  steps:
+  - intent: inquire_refurbished_computers
+  - action: utter_refurbished_computers
+
+- story: User asks about the best brands available
+  steps:
+  - intent: inquire_best_brands
+  - action: utter_best_brands
+
+- story: User asks for laptop accessories
+  steps:
+  - intent: inquire_laptop_accessories
+  - action: utter_laptop_accessories
+
+- story: User asks about custom computer orders
+  steps:
+  - intent: inquire_custom_computer
+  - action: utter_custom_computer
+
+- story: User asks if custom-built PCs are offered
+  steps:
+  - intent: inquire_custom_pc_build
+  - action: utter_custom_pc_build
+
+- story: User asks about custom PC build time
+  steps:
+  - intent: inquire_custom_pc_build_time
+  - action: utter_custom_pc_build_time
+
+- story: User asks about shipping costs
+  steps:
+  - intent: inquire_shipping_cost
+  - action: utter_shipping_cost
+
+- story: User asks about order delivery time
+  steps:
+  - intent: inquire_order_delivery_time
+  - action: utter_order_delivery_time
+
+
+- story: User asks how to leave a review
+  steps:
+  - intent: inquire_review_submission
+  - action: utter_review_submission
+
+- story: User asks about gift cards
+  steps:
+  - intent: inquire_gift_cards
+  - action: utter_gift_cards
+
+- story: User asks about gift cards
+  steps:
+  - intent: inquire_gift_cards
+  - action: utter_gift_cards
+
+- story: User asks about antivirus
+  steps:
+  - intent: inquire_antivirus_software
+  - action: utter_antivirus_software
+
+- story: User asks about privacy policy
+  steps:
+  - intent: inquire_privacy_policy
+  - action: utter_privacy_policy

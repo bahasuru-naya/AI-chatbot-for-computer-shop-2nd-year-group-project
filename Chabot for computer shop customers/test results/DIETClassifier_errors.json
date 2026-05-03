@@ -1,0 +1,16 @@
+[
+  {
+    "text": "What features should I look for in a student laptop?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 23,
+        "end": 27,
+        "confidence_entity": 0.9942732453346252,
+        "value": "look",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

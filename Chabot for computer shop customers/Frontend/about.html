@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer shop Assistant</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="./css/style4.css">
+  <link data-n-head="ssr" rel="icon" type="image/png" sizes="96x96" href="images/logo.png">
+
+</head>
+
+<body>
+  <div class="preloader">
+    <img id="load" src="" alt="preloader">
+  </div>
+  <!-- partial:index.partial.html -->
+  <div id="nav-bar">
+    <input id="nav-toggle" type="checkbox" title="nav" />
+
+    <div id="nav-header"><a id="nav-title" href="./index.html" target="_blank"><i class="fas fa-laptop"></i>RK</a>
+      <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+      <hr />
+
+    </div>
+    <div id="nav-content">
+      <div class="nav-button" onclick="location.href='./index.html'"><i
+          class="fas fa-hands-praying"></i><span>Welcome</span></div>
+      <div class="nav-button" onclick="location.href='./chatbot.html'"><i
+          class="fas fa-robot"></i><span>Assistant</span></div>
+      <div class="nav-button" onclick="location.href='./faq.html'"><i
+          class="fas fa-circle-question"></i><span>FAQs</span></div>
+      <div class="nav-button" onclick="location.href='./about.html'"><i class="fas fa-user-friends"></i><span>About
+          us</span></div>
+      <div class="nav-button" onclick="location.href='./feedback.html'"><i
+          class="fas fa-reply"></i><span>Feedback</span></div>
+      <div class="nav-button" onclick="location.href='https://bahasuru-naya.github.io/Computer-shop-website/'"><i class="fas fa-house-chimney"></i></i><span>Back to
+          Home</span></div>
+      <div id="nav-content-highlight"></div>
+      <div id="nav-content-highlight-now"></div>
+    </div>
+    <input id="nav-footer-toggle" type="checkbox" title="footer" />
+
+    <div id="nav-footer">
+      <div id="nav-footer-heading">
+        <div id="nav-footer-avatar"><img src="./images/settings-64.png" alt="Settings" /></div>
+        <label for="nav-toggle"></label>
+        <div id="nav-footer-titlebox">Settings<span id="nav-footer-subtitle">Website</span></div>
+        <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+      </div>
+      <div id="nav-footer-content">
+        <p>Dark Mode</p>
+        <label id="darkmode" class="switch" for="dark">
+          <input type="checkbox" id="dark" title="dark mode" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+
+    <div id="dashboard">
+      <header class="header">
+        <p class="title">About us & Contact us</p>
+      </header>
+      <div id="dcontent">
+        <section class="about">          
+          <h2>Welcome to RK Computers & CCTV Operator !</h2>
+          <img src="images/logoabout.png" alt="logo" class="logo" width="500px">
+          <p>At RK Computers & CCTV Operator , we are passionate about technology and dedicated to providing the best
+            products and services to our customers. With years of experience in the computer industry, our mission is to
+            offer high-quality PC components, laptops, accessories, and technical support to enthusiasts, professionals,
+            and everyday users alike.</p>
+        </section>
+        <section class="story">
+          <h2>Our Story</h2>
+          <p>Founded in 2000, RK Computers & CCTV Operator started with a simple goal: to make technology accessible and
+            affordable for everyone. Over the years, we have grown from a small local store to a trusted name in the
+            tech community, known for our commitment to quality and customer satisfaction.</p>
+        </section>
+        <section class="offer">
+          <h2>What We Offer</h2>
+          <ul>
+            <li><strong>Wide Range of Products:</strong> From the latest laptops and desktops to essential accessories
+              and peripherals, we have everything you need to stay ahead in the tech world.</li>
+            <li><strong>Expert Advice:</strong> Our knowledgeable staff is here to help you find the perfect components
+              and devices to suit your needs. Whether you're building a custom PC or upgrading your existing setup, we
+              provide expert guidance every step of the way.</li>
+            <li><strong>Competitive Prices:</strong> We strive to offer the best prices on the market, ensuring that you
+              get the most value for your money.</li>
+            <li><strong>Reliable Support:</strong> Our commitment to you doesn't end at the sale. We provide ongoing
+              technical support and services to keep your systems running smoothly.</li>
+          </ul>
+        </section>
+        <section class="why-choose-us">
+          <h2>Why Choose Us?</h2>
+          <ul>
+            <li><strong>Customer-Centric Approach:</strong> Your satisfaction is our top priority. We listen to your
+              needs and go the extra mile to exceed your expectations.</li>
+            <li><strong>Quality Assurance:</strong> We stock products from trusted brands and thoroughly test everything
+              we sell to ensure it meets our high standards.</li>
+            <li><strong>Community Focus:</strong> We are proud to be a part of the tech community, and we actively
+              participate in local events, workshops, and educational programs.</li>
+          </ul>
+        </section>
+        <section class="contact">
+          <h2>Contact Us</h2>
+          <p>We'd love to hear from you! Whether you have a question, need technical support, or just want to say hello,
+            feel free to reach out to us.</p>
+          <address>
+            <p><strong>Address:</strong><br>
+              RK Computers & CCTV Operator <br>
+              Ambalangoda,<br>
+              Sri Lanka </p>
+            <p><strong>Phone:</strong> 070 256 6205</p>
+            <p><strong>Email:</strong> <a id="email" href="mailto:rkcomputer909@gmail.com">rkcomputer909@gmail.com</a></p>
+            <p><strong>Business Hours:</strong><br>
+              Monday to Saturday: 9:00 AM - 6:00 PM<br>
+              Sunday: Closed</p>
+          </address>
+          <div class="social-media">
+            <h3>Follow Us:</h3>
+            <ul>
+              <li><a
+                  href="https://web.facebook.com/p/RK-Computers-Ampara-Ambalangoda-100064633041153/?_rdc=1&_rdr"><i class="fa-brands fa-facebook fa-4x" ></i></a>
+              </li>
+
+            </ul>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+  <!-- partial -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"
+    integrity="sha512-PU5S6BA03fRv1Q5fpwXjg5nlRrgdoguZ74urFInkbABMCENyx5oP3hrDzYMMPh3qdLdknIvrGj3yqZ4JuU7Nag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="js/config.js"></script>
+  <script src="js/script4.js"></script>
+
+</body>
+
+</html>

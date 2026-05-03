@@ -1,0 +1,75 @@
+version: "3.1"
+rules:
+- rule: greet anytime the user greet
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: give components anytime the user asks
+  steps:
+    - intent: find_components
+    - action: action_find_components
+
+- rule: give price anytime the user asks
+  steps:
+    - intent: item_price
+    - action: action_give_price
+
+- rule: show picture anytime the user asks
+  steps:
+    - intent: ask_item_pic
+    - action: action_show_item
+
+- rule: give available items anytime the user asks
+  steps:
+    - intent: ask_available_items
+    - action: action_list_available_items
+
+- rule: check available item which user given anytime
+  steps:
+    - intent: ask_available_one_item
+    - action: action_check_item_availability
+
+- rule: check discount of item which user given anytime
+  steps:
+    - intent: ask_discount_on_item
+    - action: action_check_discount
+
+- rule: check warranty of item which user given anytime
+  steps:
+    - intent: ask_warranty_on_item
+    - action: action_check_warranty
+
+- rule: get item description of item which user given anytime
+  steps:
+    - intent: ask_description_of_item
+    - action: action_describe_item
+
+- rule: turn on lightmode anytime
+  steps:
+    - intent: turn_light_mode_on
+    - action: utter_turn_light_mode_on
+
+- rule: turn on darkmode anytime
+  steps:
+    - intent: turn_dark_mode_on
+    - action: utter_turn_dark_mode_on
+
+- rule: turn on tts anytime
+  steps:
+    - intent: enable_text_to_speech
+    - action: utter_enable_text_to_speech
+
+- rule: turn off tts anytime
+  steps:
+    - intent: disable_text_to_speech
+    - action: utter_disable_text_to_speech
+
+- rule: Ask the llm whenever they send a message with low NLU confidence
+  steps:
+    - intent: nlu_fallback
+    - action: action_nlu_fallback
+
+
+
+

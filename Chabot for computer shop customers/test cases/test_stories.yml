@@ -1,0 +1,336 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: say goodbye
+  steps:
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - user: |
+      are you a bot?
+    intent: bot_challenge
+  - action: utter_iamabot
+
+- story: find_components
+  steps:
+  - user: |
+      What components do I need for playing GTA V
+    intent: find_components
+  - action: action_find_components
+
+- story: ask for help
+  steps:
+  - user: |
+      I need help with my order.
+    intent: asking_help
+  - action: utter_offer_help
+
+- story: say hello
+  steps:
+  - user: |
+      Hello!
+    intent: greet
+  - action: utter_greet
+
+
+- story: ask about shop
+  steps:
+  - user: |
+      Do you have a physical store?
+    intent: asking_about_shop
+  - action: utter_about
+
+
+- story: ask about item price
+  steps:
+  - user: |
+      What is the price of Intel i5?
+    intent: item_price
+  - action: action_give_price
+
+- story: ask for item picture
+  steps:
+  - user: |
+      show me Lenovo IdeaPad Flex 5
+    intent: ask_item_pic
+  - action: action_show_item
+
+- story: ask about capabilities
+  steps:
+  - user: |
+      What can you help with?
+    intent: asking_capabilities
+  - action: utter_give_capabilities
+
+- story: ask about available items
+  steps:
+  - user: |
+      Show what I can buy.
+    intent: ask_available_items
+  - action: action_list_available_items
+
+- story: ask if specific item is available
+  steps:
+  - user: |
+      Is  Intel Core i9 available?
+    intent: ask_available_one_item
+  - action: action_check_item_availability
+
+- story: ask about discount on item
+  steps:
+  - user: |
+      Is there a discount on Intel i5?
+    intent: ask_discount_on_item
+  - action: action_check_discount
+
+- story: ask about warranty on item
+  steps:
+  - user: |
+     Can you tell me the warranty  for Samsung 970 EVO SSD
+    intent: ask_warranty_on_item
+  - action: action_check_warranty
+
+- story: ask for description of item
+  steps:
+  - user: |
+      Describe the Logitech G502 mouse
+    intent: ask_description_of_item
+  - action: action_describe_item
+
+- story: ask about working hours
+  steps:
+  - user: |
+      What are your working hours?
+    intent: asking_about_working_hours
+  - action: utter_ask_working_hours
+
+- story: ask about location
+  steps:
+  - user: |
+      Where  I find you?
+    intent: asking_about_location
+  - action: utter_location
+
+- story: ask about home delivery
+  steps:
+  - user: |
+      Do you offer home delivery?
+    intent: asking_home_delivery
+  - action: utter_home_delivery
+
+- story: ask how to claim warranty
+  steps:
+  - user: |
+      How do I claim the warranty for my laptop?
+    intent: asking_how_to_claim_warranty
+  - action: utter_how_to_claim_warranty
+
+- story: ask about bulk discounts
+  steps:
+  - user: |
+      Do you offer bulk discounts?
+    intent: asking_about_bulk_discounts
+  - action: utter_about_bulk_discounts
+
+- story: ask about payments
+  steps:
+  - user: |
+      What payment methods do you accept?
+    intent: asking_about_payments
+  - action: utter_about_payments
+
+- story: ask about return policy
+  steps:
+  - user: |
+      What's your return policy?
+    intent: asking_about_return_policy
+  - action: utter_about_return_policy
+
+- story: ask about product exchange
+  steps:
+  - user: |
+      How do I go about exchanging a product I am dissatisfied with?
+    intent: asking_about_exchange_product
+  - action: utter_about_exchange_product
+
+- story: ask about customer support
+  steps:
+  - user: |
+      How can I contact customer support?
+    intent: asking_about_customer_support
+  - action: utter_about_customer_support
+
+- story: inquire about CCTV price
+  steps:
+  - user: |
+      What's the price of  CCTV cameras?
+    intent: inquire_cctv_price
+  - action: utter_cctv_price
+
+- story: inquire about CCTV installation
+  steps:
+  - user: |
+      Do you provide CCTV installation services?
+    intent: inquire_cctv_installation
+  - action: utter_cctv_installation
+
+- story: inquire about CCTV operation
+  steps:
+  - user: |
+      How do I operate the CCTV ?
+    intent: inquire_cctv_operation
+  - action: utter_cctv_operation
+
+- story: inquire about computer types
+  steps:
+  - user: |
+      What types of computers do you sell?
+    intent: inquire_computer_types
+  - action: utter_computer_types
+
+- story: inquire about gaming laptops
+  steps:
+  - user: |
+      Do you sell gaming laptops?
+    intent: inquire_gaming_laptops
+  - action: utter_gaming_laptops
+
+- story: inquire about best laptops for students
+  steps:
+  - user: |
+      What are  best laptops for students?
+    intent: inquire_best_laptops_for_students
+  - action: utter_best_laptops_for_students
+
+- story: inquire about desktop for graphic design
+  steps:
+  - user: |
+      Which desktop is best for  design?
+    intent: inquire_desktop_for_graphic_design
+  - action: utter_desktop_for_graphic_design
+
+- story: inquire about budget computers
+  steps:
+  - user: |
+      Do you have  budget computers?
+    intent: inquire_budget_computers
+  - action: utter_budget_computers
+
+- story: inquire about best brands
+  steps:
+  - user: |
+      What are the best computer brands?
+    intent: inquire_best_brands
+  - action: utter_best_brands
+
+- story: inquire about refurbished computers
+  steps:
+  - user: |
+      Do you sell refurbished pcs?
+    intent: inquire_refurbished_computers
+  - action: utter_refurbished_computers
+
+- story: inquire about antivirus software
+  steps:
+  - user: |
+      Do you offer antivirus software?
+    intent: inquire_antivirus_software
+  - action: utter_antivirus_software
+
+- story: User asks for budget-friendly computers
+  steps:
+  - user: |
+      Can you show me your budget computer range?
+  - intent: inquire_budget_computers
+  - action: utter_budget_computers
+
+- story: User asks about refurbished computers
+  steps:
+  - user: |
+      How can I buy a refurbished computer from you?
+  - intent: inquire_refurbished_computers
+  - action: utter_refurbished_computers
+
+- story: User asks about the best brands available
+  steps:
+  - user: |
+      Do you have  top-rated brands for desktops?
+  - intent: inquire_best_brands
+  - action: utter_best_brands
+
+- story: User asks for laptop accessories
+  steps:
+  - user: |
+      Do you sell laptop chargers and bags?
+  - intent: inquire_laptop_accessories
+  - action: utter_laptop_accessories
+
+- story: User asks about custom computer orders
+  steps:
+  - user: |
+      Do you offer custom design services for computers?
+  - intent: inquire_custom_computer
+  - action: utter_custom_computer
+
+- story: User asks if custom-built PCs are offered
+  steps:
+  - user: |
+      What are the benefits of a custom-built PC versus a pre-built one?
+  - intent: inquire_custom_pc_build
+  - action: utter_custom_pc_build
+
+- story: User asks about custom PC build time
+  steps:
+  - user: |
+      How much time is required for a custom PC build?
+  - intent: inquire_custom_pc_build_time
+  - action: utter_custom_pc_build_time
+
+- story: User asks about shipping costs
+  steps:
+  - user: |
+      Do you charge for shipping?
+  - intent: inquire_shipping_cost
+  - action: utter_shipping_cost
+
+- story: User asks about order delivery time
+  steps:
+  - user: |
+      How long until I receive my order?
+  - intent: inquire_order_delivery_time
+  - action: utter_order_delivery_time
+
+
+- story: User asks how to leave a review
+  steps:
+  - user: |
+      Is there a form to submit my product feedback?
+  - intent: inquire_review_submission
+  - action: utter_review_submission
+
+- story: User asks about gift cards
+  steps:
+  - user: |
+      What denominations are available for your gift cards?
+  - intent: inquire_gift_cards
+  - action: utter_gift_cards
+
+
+- story: User asks about privacy policy
+  steps:
+  - user: |
+      What measures do you take to protect user privacy?
+  - intent: inquire_privacy_policy
+  - action: utter_privacy_policy
+
+- story: test NLU fallback
+  steps:
+  - user: |
+      who is sri lankan president?
+  - intent: nlu_fallback
+  - action: utter_please_try_again

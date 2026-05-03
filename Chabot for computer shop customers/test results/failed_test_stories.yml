@@ -1,0 +1,133 @@
+version: "3.1"
+stories:
+- story: ask if specific item is available (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_available_one_item  # predicted: ask_available_one_item: Is  [Intel Core i9](item_name) available?
+  - action: action_check_item_availability
+- story: ask about discount on item (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_discount_on_item  # predicted: ask_discount_on_item: Is there a discount on [Intel i5][{"entity": "item_name"}, {"entity": "item_name"}]?
+  - action: action_check_discount
+- story: ask about warranty on item (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_warranty_on_item  # predicted: ask_warranty_on_item: Can you tell me the warranty  for [Samsung 970 EVO SSD](item_name)
+  - action: action_check_warranty
+- story: ask for description of item (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_description_of_item  # predicted: ask_description_of_item: Describe the [Logitech G502 mouse](item_name)
+  - action: action_describe_item
+- story: ask about bulk discounts (.\tests\test_stories.yml)
+  steps:
+  - intent: asking_about_bulk_discounts  # predicted: nlu_fallback: Do you offer bulk discounts?
+  - action: utter_about_bulk_discounts
+- story: User asks for budget-friendly computers (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      Can you show me your budget computer range?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: inquire_budget_computers
+  - action: utter_budget_computers
+- story: User asks about refurbished computers (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      How can I buy a refurbished computer from you?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: inquire_refurbished_computers
+  - action: utter_refurbished_computers
+- story: User asks about the best brands available (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      Do you have  top-rated brands for desktops?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: inquire_best_brands
+  - action: utter_best_brands
+- story: User asks for laptop accessories (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      Do you sell laptop chargers and bags?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: inquire_laptop_accessories
+  - action: utter_laptop_accessories
+- story: User asks about custom computer orders (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      Do you offer custom design services for computers?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: inquire_custom_computer
+  - action: utter_custom_computer
+- story: find_components (.\tests\test_stories.yml)
+  steps:
+  - intent: find_components  # predicted: find_components: What components do I need for playing [GTA V][{"entity": "application_name"}, {"entity": "application_name"}]
+  - action: action_find_components
+- story: User asks if custom-built PCs are offered (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      What are the benefits of a custom-built PC versus a pre-built one?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: inquire_custom_pc_build
+  - action: utter_custom_pc_build
+- story: User asks about custom PC build time (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      How much time is required for a custom PC build?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: inquire_custom_pc_build_time
+  - action: utter_custom_pc_build_time
+- story: User asks about shipping costs (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      Do you charge for shipping?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: inquire_shipping_cost
+  - action: utter_shipping_cost
+- story: User asks about order delivery time (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      How long until I receive my order?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: inquire_order_delivery_time
+  - action: utter_order_delivery_time
+- story: User asks how to leave a review (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      Is there a form to submit my product feedback?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: inquire_review_submission
+  - action: utter_review_submission
+- story: User asks about gift cards (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      What denominations are available for your gift cards?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: inquire_gift_cards
+  - action: utter_gift_cards
+- story: User asks about privacy policy (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      What measures do you take to protect user privacy?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: inquire_privacy_policy
+  - action: utter_privacy_policy
+- story: test NLU fallback (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      who is sri lankan president?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: nlu_fallback
+  - action: utter_please_try_again
+- story: ask for help (.\tests\test_stories.yml)
+  steps:
+  - intent: asking_help  # predicted: nlu_fallback: I need help with my order.
+  - action: utter_offer_help  # predicted: utter_ask_application
+- story: ask about shop (.\tests\test_stories.yml)
+  steps:
+  - intent: asking_about_shop  # predicted: nlu_fallback: Do you have a physical store?
+  - action: utter_about
+- story: ask about item price (.\tests\test_stories.yml)
+  steps:
+  - intent: item_price  # predicted: item_price: What is the price of [Intel i5][{"entity": "item_name"}, {"entity": "item_name"}]?
+  - action: action_give_price
+- story: ask for item picture (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_item_pic  # predicted: nlu_fallback: show me [Lenovo IdeaPad Flex 5][{"entity": "item_name"}, {"entity": "item_name"}]
+  - action: action_show_item

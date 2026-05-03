@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer shop Assistant</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="./css/style3.css">
+  <link data-n-head="ssr" rel="icon" type="image/png" sizes="96x96" href="images/logo.png">
+
+</head>
+
+<body>
+  <div class="preloader">
+    <img id="load" src="" alt="preloader">
+  </div>
+  <!-- partial:index.partial.html -->
+  <div id="nav-bar">
+    <input id="nav-toggle" type="checkbox" title="nav" />
+
+    <div id="nav-header"><a id="nav-title" href="./index.html" target="_blank"><i class="fas fa-laptop"></i>RK</a>
+      <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+      <hr />
+
+    </div>
+    <div id="nav-content">
+      <div class="nav-button" onclick="location.href='./index.html'"><i
+          class="fas fa-hands-praying"></i><span>Welcome</span></div>
+      <div class="nav-button" onclick="location.href='./chatbot.html'"><i
+          class="fas fa-robot"></i><span>Assistant</span></div>
+      <div class="nav-button" onclick="location.href='./faq.html'"><i
+          class="fas fa-circle-question"></i><span>FAQs</span></div>
+      <div class="nav-button" onclick="location.href='./about.html'"><i class="fas fa-user-friends"></i><span>About
+          us</span></div>
+      <div class="nav-button" onclick="location.href='./feedback.html'"><i
+          class="fas fa-reply"></i><span>Feedback</span></div>
+      <div class="nav-button" onclick="location.href='https://bahasuru-naya.github.io/Computer-shop-website/'"><i class="fas fa-house-chimney"></i></i><span>Back to
+          Home</span></div>
+      <div id="nav-content-highlight"></div>
+      <div id="nav-content-highlight-now"></div>
+    </div>
+    <input id="nav-footer-toggle" type="checkbox" title="footer" />
+
+    <div id="nav-footer">
+      <div id="nav-footer-heading">
+        <div id="nav-footer-avatar"><img src="./images/settings-64.png" alt="Settings" /></div>
+        <label for="nav-toggle"></label>
+        <div id="nav-footer-titlebox">Settings<span id="nav-footer-subtitle">Website</span></div>
+        <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+      </div>
+      <div id="nav-footer-content">
+        <p>Dark Mode</p>
+        <label id="darkmode" class="switch" for="dark">
+          <input type="checkbox" id="dark" title="dark mode" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+
+    <div id="dashboard">
+      <header class="header">
+        <p class="title">Frequently asked questions (FAQs)</p>
+      </header>
+      
+        <main class="card">
+
+          <div class="acc-container">
+
+            <button class="acc-btn">What can you help me with?</button>
+            <div class="acc-content">
+              <p>
+                I can assist you with finding and recommending PC components, showing images and prices of PC parts,
+                checking the availability of items in the store, and providing contact information for inquiries.
+              </p>
+            </div>
+
+            <button class="acc-btn">
+              How do I find a specific PC component?
+            </button>
+            <div class="acc-content">
+              <p>
+                Simply ask me by typing the name of the component you're looking for, and I’ll provide you with the
+                available options and their details.
+              </p>
+            </div>
+
+            <button class="acc-btn">
+              How can I see the prices and images of PC components?
+            </button>
+            <div class="acc-content">
+              <p>
+                When you inquire about a specific component , I will provide you with the images and prices of the
+                available items in our store.
+              </p>
+            </div>
+
+            <button class="acc-btn">
+              How do I check if an item is available in the store?
+            </button>
+            <div class="acc-content">
+              <p>
+                You can ask me about the availability of any item, and I will check our inventory and let you know if
+                it's
+                in stock.
+              </p>
+            </div>
+
+            <button class="acc-btn">
+              How can I contact customer support?
+            </button>
+            <div class="acc-content">
+              <p>
+                For further assistance, you can reach out to our customer support team through the contact information I
+                provide. Just ask me for contact details.
+              </p>
+            </div>
+
+            <button class="acc-btn">
+              Do you offer any discounts or warranties on your products?
+            </button>
+            <div class="acc-content">
+              <p>
+                Yes, we offer discounts and warranties on various products. Ask me about the current discounts or
+                warranty
+                details on the items you’re interested in.
+              </p>
+            </div>
+
+            <button class="acc-btn">
+              What if I need more information or have a specific question?
+            </button>
+            <div class="acc-content">
+              <p>
+                You can ask me any specific questions, and I will do my best to provide you with the information you
+                need.
+                If I can’t help, I will direct you to our customer service team.
+              </p>
+            </div>
+
+            <button class="acc-btn">
+              How can I leave feedback or a review?
+            </button>
+            <div class="acc-content">
+              <p>
+                We value your feedback! You can leave feedback or a review by asking me how to do so, and I’ll guide you
+                through the process.
+              </p>
+            </div>
+
+          </div>
+        </main>
+      
+    </div>
+  </div>
+  <!-- partial -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"
+    integrity="sha512-PU5S6BA03fRv1Q5fpwXjg5nlRrgdoguZ74urFInkbABMCENyx5oP3hrDzYMMPh3qdLdknIvrGj3yqZ4JuU7Nag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="js/config.js"></script>
+  <script src="js/script3.js"></script>
+
+</body>
+
+</html>

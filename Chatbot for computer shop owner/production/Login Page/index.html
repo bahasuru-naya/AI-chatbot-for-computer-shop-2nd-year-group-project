@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <!-- Adding Favicon -->
+    <link
+      rel="icon"
+      href="https://img.icons8.com/fluency/38/login-rounded-right.png"
+      type="image/png"
+    />
+    <style>
+      /* Loading overlay styles */
+      #loadingOverlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8); /* Optional white overlay */
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #loadingOverlay img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Cover the full width of the page */
+        height: 100%; /* Cover the full height of the page */
+        object-fit: cover; /* Ensure the GIF scales properly */
+        z-index: 1001;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay">
+      <img src="./loading.gif" alt="Loading..." />
+    </div>
+
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form id="loginForm" class="sign-in-form">
+            <h2 class="title">Login to RK Digital Assistant</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" id="username" placeholder="Username" required />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" id="password" placeholder="Password" required />
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+          </form>
+
+          <form action="" class="sign-up-form">
+            <h2 class="title">Sign Up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Sign Up" class="btn solid" />
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel"></div>
+        <div class="panel right-panel">
+          <div class="content"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Add event listener for the login form submission
+      document.getElementById("loginForm").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        // Show the loading overlay
+        const loadingOverlay = document.getElementById("loadingOverlay");
+        loadingOverlay.style.display = "flex";
+
+        // Simulate a short delay for redirection (e.g., for server response)
+        setTimeout(() => {
+          // Check credentials
+          if (username === "rkcomputers@gmail.com" && password === "rk123") {
+            // Redirect to the specified URL
+            window.location.href = "http://127.0.0.1:5000";
+          } else {
+            // Hide the loading overlay
+            loadingOverlay.style.display = "none";
+
+            // Show an alert and reset the form
+            alert(
+              "Wrong username or password! Please contact the developer if you forgot your password."
+            );
+            document.getElementById("username").value = "";
+            document.getElementById("password").value = "";
+          }
+        }, 2000); // Adjust delay as needed
+      });
+    </script>
+  </body>
+</html>
